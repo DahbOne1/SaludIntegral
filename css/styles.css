@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+/*Estils generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    color: #171717;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h5{
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+span, p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hr{
+    width: 50px;
+    height: 3px;
+    background-color: #171717;
+    margin: 0 auto;
+}
+
+img{
+    object-fit: cover;
+}
+
+/*Estilos del header*/
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    padding: 20px 0;
+    backdrop-filter: blur(15px);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav span{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav ul{
+    gap: 20px;
+}
+
+#list a{
+    font-size: 18px;
+    color: #171717b0;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 3px 15px;
+    transition: color 1s; 
+}
+
+#list a:hover{
+    color: #171717;
+    border: .5px solid #1717177b;
+}
+
+
+/*Estilos del home*/
+#home{
+    background-image: url(/img/fondo.jpg);
+    position: relative;
+    height: 100vh;
+    background-position: 80% 70%;
+}
+
+#home h1{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 120px;
+    letter-spacing: 4px;
+}
+
+#home h3{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+#home hr{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 75px;
+    height: 4px;
+    background-color: #171717c6;
+}
+
+/*Seccion articulos*/
+#article{
+    text-align: center;
+    background-color: rgb(244, 238, 238);
+}
+
+#article h5{
+    padding: 65px 0 25px 0;
+}
+
+#article article{
+    display: flex;
+    width: 100%;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.contArticle{
+    width: 22%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px -3px rgba(23,23,23,0.86);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: transform 1.5s;
+}
+
+.contArticle:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.contArticle img{
+    height: 50%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.contArtP{
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contArtP hr{
+    margin: 70px auto 20px;
+    width: 45px;
+    height: 3px;
+    background-color: #171717;
+}
+
+.contArtP p{
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/*seccion nosotros*/
+#nosotros{
+    padding-top: 5%;
+    display: flex;
+}
+
+#nosotros img{
+    width: 50%;
+}
+
+#artNosotros{
+    text-align: center;
+}
+
+#artNosotros h5{
+    margin-top: 8%;
+}
+
+#artNosotros hr{
+    margin-top: 15px;
+}
+
+#artNosotros p{
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*Estilos de la seccion suscrib*/
+#suscrib{
+    text-align: center;
+    background-color: rgb(244, 238, 238);
+}
+
+#suscrib h5{
+    padding: 60px 0 10px;
+}
+
+#form{
+    margin: 35px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+#form input{
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 0;
+    width: 50%;
+}
+
+#form button{
+    width: 30%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+#mensaje{
+    padding: 10px 0 20px;
+}
+
+/*Estilos de las seccion redes*/
+#redes{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes ul{
+    display: flex;
+    gap: 35px;
+}
+
+#redes a{
+    color: #171717db;
+    font-size: 22px;
+    transition: color 2s;
+}
+
+#redes a:hover{
+    color: #171717;
+}
+
+/*Estilos del footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer span{
+    padding: 35px 0;
+}
+
+footer a{
+    font-weight: bolder;
+    color: #171717;
+}
+
+/*Estilos para tablets*/
+@media screen and (max-width: 768px){
+    /*Estilos del home*/
+    #home{
+        background-position: 70% 0;
+    }
+
+    /*Estilos secion article*/
+    #article article{
+        flex-wrap: wrap;
+    }
+
+    .contArticle{
+        width: 40%;
+    }
+    
+    #artNosotros p{
+        margin-top: 20px;
+        width: 85%;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+}
+
+/*Medidas par celular*/
+@media only screen and (min-width: 340px) and (max-width: 425px){
+    /*Estilos del header*/
+    nav{
+        position: relative;
+        padding: 5px 0;
+    }
+
+    nav span{
+        font-size: 32px;
+    }
+
+    #list{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    nav:hover #list{
+        display: block;
+        text-align: center;
+        background-color: #171717de;
+    }
+
+    #list a{
+        font-size: 22px;
+        color: #ffffff;
+        display: block;
+        padding: 35px 0;
+    }
+    
+    /*Estilos del home*/
+    #home{
+        background-position: 100% 0%;
+        text-align: center;
+    }
+    
+    #home h1{
+        top: 28%;
+        left: 15%;
+        font-size: 85px;
+        letter-spacing: 2px;
+    }
+    
+    #home h3{
+        top: 40%;
+        left: 22%;
+        font-size: 35px;
+    }
+    
+    #home hr{
+        top: 48%;
+        left: 41%;
+        height: 5px;
+    }
+
+    /*Estilos de la seccion article*/
+    .contArticle{
+        width: 90%;
+    }
+
+    /*seccion nosotros*/
+    #nosotros{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nosotros img{
+        width: 100%;
+    }
+
+    #artNosotros p{
+        margin-top: 30px;
+    }
+
+    /*Estilos de la seccion suscrib*/
+    #form{
+        width: 100%;
+    }
+
+    #form input{
+        width: 80%;
+    }
+
+    #form button{
+        width: 80%;
+    }
+
+    #mensaje{
+        padding: 10px 0 20px;
+    }
+
+
+}
