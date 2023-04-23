@@ -68,17 +68,17 @@ nav span{
 }
 
 nav ul{
-    gap: 20px;
+    gap: 25px;
 }
 
 #list a{
-    font-size: 18px;
+    font-size: 24px;
     color: #171717b0;
     letter-spacing: 2px;
     font-weight: bold;
     border: 1px solid transparent;
     padding: 3px 15px;
-    transition: color 1s; 
+    transition: color 1s, border .5s; 
 }
 
 #list a:hover{
@@ -86,37 +86,35 @@ nav ul{
     border: .5px solid #1717177b;
 }
 
-
 /*Estilos del home*/
 #home{
     background-image: url(../img/fondo.jpg);
-    position: relative;
     height: 100vh;
-    background-position: 80% 70%;
+    background-position: 80% 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #home h1{
-    position: absolute;
-    top: 30%;
-    left: 15%;
     font-size: 120px;
     letter-spacing: 4px;
+    margin-left: 10%;
+    font-weight: bolder;
 }
 
 #home h3{
-    position: absolute;
-    top: 50%;
-    left: 15%;
     font-size: 45px;
     letter-spacing: 2px;
+    margin-left: 10%;
 }
 
 #home hr{
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    width: 75px;
+    width: 100px;
     height: 4px;
+    margin-left: 10%;
+    margin-top: 10px;
     background-color: #171717c6;
 }
 
@@ -141,7 +139,7 @@ nav ul{
 
 .contArticle{
     width: 22%;
-    height: 470px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 4px 8px -3px rgba(23,23,23,0.86);
@@ -293,7 +291,7 @@ footer a{
 }
 
 /*Estilos para tablets*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
     /*Estilos del home*/
     #home{
         background-position: 70% 0;
@@ -318,7 +316,7 @@ footer a{
 }
 
 /*Medidas par celular*/
-@media only screen and (min-width: 340px) and (max-width: 425px){
+@media screen  and (max-width: 426px){
     /*Estilos del header*/
     nav{
         position: relative;
@@ -354,30 +352,28 @@ footer a{
     #home{
         background-position: 100% 0%;
         text-align: center;
+        justify-content: flex-start;
     }
     
     #home h1{
-        top: 28%;
-        left: 15%;
-        font-size: 85px;
+        margin-top: 45%;
+        font-size: 95px;
         letter-spacing: 2px;
     }
     
     #home h3{
-        top: 40%;
-        left: 22%;
         font-size: 35px;
     }
     
     #home hr{
-        top: 48%;
-        left: 41%;
+        margin-top: 5px;
         height: 5px;
     }
 
     /*Estilos de la seccion article*/
     .contArticle{
-        width: 90%;
+        width: 78%;
+        height: 420px;
     }
 
     /*seccion nosotros*/
@@ -413,4 +409,16 @@ footer a{
     }
 
 
+}
+
+@media screen  and (max-width: 376px){
+    #home h1{
+        font-size: 80px;
+    }
+}
+
+@media screen  and (max-width: 321px){
+    #home h1{
+        font-size: 70px;
+    }
 }
