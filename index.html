@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="img/avocado.png" type="image/x-icon">
+    <script src="script.js"></script>
     <title>Salud Integral</title>
 
 </head>
@@ -37,13 +38,15 @@
                     <div class="contArtP">
                         <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                        <button type="button" class="verMas" onclick="leer(0)">Leer más</button>
+                    </div> 
                 </div>
                 <div class="contArticle">
                     <img src="img/camino.jpg" alt="img">
                     <div class="contArtP">
                         <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button type="button" class="verMas" onclick="leer(1)">Leer más</button>
                     </div>
                 </div>
                 <div class="contArticle">
@@ -51,7 +54,19 @@
                     <div class="contArtP">
                         <hr>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button type="button" class="verMas" onclick="leer(2)">Leer más</button>
                     </div>
+                </div>
+            </article>
+        </section>
+        <section class="modal">
+            <article id="cont-modal">
+                <img src="" alt="img" id="imgArt">
+                <div>
+                    <span id="titleArt"></span>
+                    <hr>
+                    <p id="textArt"></p>
+                    <button type="button" id="close-modal" onclick="cerrar()">Cerrar</button>
                 </div>
             </article>
         </section>
@@ -83,7 +98,7 @@
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
             </ul>
         </section>
-        <script src="script.js"></script>
+        
     </main>
     <footer>
         <span>

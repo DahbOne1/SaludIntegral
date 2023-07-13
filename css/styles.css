@@ -139,18 +139,13 @@ nav ul{
 
 .contArticle{
     width: 22%;
-    height: 400px;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 4px 8px -3px rgba(23,23,23,0.86);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: transform 1.5s;
-}
-
-.contArticle:hover{
-    transform: translateY(-8px);
-    cursor: pointer;
 }
 
 .contArticle img{
@@ -180,6 +175,104 @@ nav ul{
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
+}
+
+.contArtP button{
+    width: 30%;
+    padding: 8px 2px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: solid .2px #171717;
+    color: #171717;
+    transition: all 1s;
+}
+
+.contArtP button:hover{
+    cursor: pointer;
+    background-color: rgb(244, 238, 238);
+}
+
+/*Modal*/
+.modal{
+    position: fixed;
+    z-index: 210;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #171717a3;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .6s;
+    --transform: translateY(100vh);
+    --transition: transform .6s;
+}
+
+#cont-modal{
+    width: 80%;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    margin: auto;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+#cont-modal img{
+    width: 50%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#cont-modal div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cont-modal div span{
+    font-size: 2.3rem;
+    margin-top: 12px;
+}
+
+#cont-modal div hr{
+    width: 15%;
+    height: 4px;
+    background-color: #171717;
+    margin-top: 4px;
+}
+
+#cont-modal div p{
+    text-align: justify;
+    margin: 25px 18px;
+}
+
+#cont-modal div button:hover{
+    background-color: #ffffff;
+}
+
+.show-modal{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .6s .6s;
+}
+
+#close-modal{
+    width: 30%;
+    padding: 8px 2px;
+    border: solid .2px #171717;
+    color: #171717;
+    transition: all 1s;
+}
+
+#close-modal:hover{
+    background-color:  rgb(244, 238, 238);
+    cursor: pointer;
 }
 
 /*seccion nosotros*/
@@ -244,6 +337,13 @@ nav ul{
     width: 30%;
     padding: 10px 0;
     margin: 0 auto;
+    border: #171717 solid .5px;
+    transition: all 1s;
+}
+
+#form button:hover{
+    cursor: pointer;
+    background-color: #ffffff;
 }
 
 #mensaje{
@@ -264,13 +364,15 @@ nav ul{
 }
 
 #redes a{
-    color: #171717db;
-    font-size: 22px;
-    transition: color 2s;
+    display: flex;
+    color: #17171785;
+    font-size: 30px;
+    transition: 1s;
 }
 
 #redes a:hover{
     color: #171717;
+    transform: scale(1.2);
 }
 
 /*Estilos del footer*/
@@ -338,7 +440,8 @@ footer a{
     nav:hover #list{
         display: block;
         text-align: center;
-        background-color: #171717de;
+        background-color: #1717175e;
+        
     }
 
     #list a{
@@ -346,8 +449,13 @@ footer a{
         color: #ffffff;
         display: block;
         padding: 35px 0;
+        transition: all 2s;
     }
     
+    #list a:hover{
+        color: #e7e7e7;
+        border-color: #e7e7e7;
+    }
     /*Estilos del home*/
     #home{
         background-position: 100% 0%;
@@ -374,6 +482,38 @@ footer a{
     .contArticle{
         width: 78%;
         height: 420px;
+    }
+
+    /*Estilos del modal*/
+    #cont-modal{
+        width: 90%;
+        height: 90vh;
+    }
+    
+    #cont-modal{
+        flex-direction: column;
+    }
+    
+    #cont-modal img{
+        width: auto;
+        height: 40%;
+        border-top-right-radius: 6px;
+    }
+    
+    #cont-modal div{
+        height: 58%;
+        width: auto;
+    }
+    
+    #cont-modal div hr{
+        width: 25%;
+        padding: 1px;
+    }
+    
+    #cont-modal div p{
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        margin: 15px 18px;
     }
 
     /*seccion nosotros*/
